@@ -33,8 +33,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 ///////////////////
 
-app.use('/', (req, res) => {
-  res.render('index', {title: 'WOO TITLE!'});
+app.get('/', (req, res) => {
+  res.render('index', {title: 'Fullstack Template'});
 });
 
 // catch 404 and forward to error handler
